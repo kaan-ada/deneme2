@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Mouse Trail Effect -->
+    <div id="cursor-trail" class="cursor-trail"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-40">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="assets/images/logo.png" alt="TK Studio Logo" class="h-10 w-10 object-contain">
+                <span class="text-2xl font-bold text-gray-800">TK <span class="text-blue-600">Studio</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#person1" class="nav-link text-gray-700 hover:text-blue-600">Kadir</a>
+                <a href="#person2" class="nav-link text-gray-700 hover:text-blue-600">Talha</a>
+                <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Neler Yaptık</a>
+                <a href="#how-we-work" class="nav-link text-gray-700 hover:text-blue-600">Nasıl Çalışıyoruz</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">İletişim</a>
+            </div>
+            <!-- Mobil menü butonu -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-gray-700"></i>
+            </button>
+        </div>
+        <!-- Mobil menü -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 px-6 pb-4">
+            <a href="#person1" class="block nav-link text-gray-700 hover:text-blue-600">Kadir</a>
+            <a href="#person2" class="block nav-link text-gray-700 hover:text-blue-600">Talha</a>
+            <a href="#projects" class="block nav-link text-gray-700 hover:text-blue-600">Neler Yaptık</a>
+            <a href="#how-we-work" class="block nav-link text-gray-700 hover:text-blue-600">Nasıl Çalışıyoruz</a>
+            <a href="#contact" class="block nav-link text-gray-700 hover:text-blue-600">İletişim</a>
+        </div>
+    </nav>
+
+    <!-- Modern Welcome Section -->
+    <section class="hero-gradient text-white min-h-[500px] flex items-center justify-center relative overflow-hidden pt-32 pb-12">
+        <!-- Animated Circles Background -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-10 left-20 w-40 h-40 rounded-full bg-white opacity-10 blur-xl animate-pulse"></div>
+            <div class="absolute top-1/4 right-10 w-64 h-64 rounded-full bg-purple-300 opacity-10 blur-xl animate-pulse" style="animation-delay: 0.5s;"></div>
+            <div class="absolute bottom-1/4 left-1/3 w-80 h-80 rounded-full bg-indigo-300 opacity-10 blur-xl animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="absolute bottom-20 right-1/4 w-60 h-60 rounded-full bg-pink-300 opacity-10 blur-xl animate-pulse" style="animation-delay: 1.5s;"></div>
+        </div>
+        <div class="container mx-auto px-6 z-10">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4 text-center">
+                    <span class="typewriter block text-white">TK Studio'ya Hoşgeldiniz</span>
+                </h1>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white text-center hero-text">İki Zihin, Tek Stüdyo</h2>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 text-center max-w-2xl mx-auto">
+                    İki kişilik yaratıcı bir stüdyo: Tasarım ve yazılım bir arada
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="#person1" class="btn-glow bg-white text-indigo-700 font-bold px-8 py-4 rounded-full hover:bg-indigo-100 transition-all duration-300">
+                        Kadir'i Keşfet <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#person2" class="btn-glow border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-indigo-700 transition-all duration-300">
+                        Talha'yı Keşfet <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Person 1 Section -->
+    <section id="person1" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Kadir Kaan Mertaslan - Backend Developer</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="assets/images/kaan.jpg" alt="Kadir Kaan Mertaslan" class="profile-img w-64 h-64 object-cover">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Hakkımda</h3>
+                        <p class="text-gray-600">
+                            10 yıllık deneyime sahip Full Stack Developer. JavaScript, React, Node.js ve Python uzmanı. 
+                            Ölçeklenebilir ve kullanıcı dostu web uygulamaları geliştiriyorum. 
+                            Yenilikçi çözümler üretmek ve teknolojiyi insanların hayatını kolaylaştırmak için kullanmayı seviyorum.
+                        </p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Yetenekler</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-600">JavaScript</span>
+                                    <span class="text-gray-600">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-600">React</span>
+                                    <span class="text-gray-600">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-600">Node.js</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Person 2 Section -->
+    <section id="person2" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Muhammet Talha Yıldız - Frontend Developer</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center">
+                    <img src="assets/images/talha.jpg" alt="Muhammet Talha Yıldız" class="profile-img w-64 h-64 object-cover">
+                </div>
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Hakkımda</h3>
+                        <p class="text-gray-600">
+                            8 yıldır UI/UX tasarımı yapıyorum. Kullanıcı odaklı tasarımlar oluşturarak 
+                            markaların dijital varlıklarını güçlendiriyorum. Adobe Creative Suite, Figma 
+                            ve tasarım sistemleri konusunda uzmanım. Görsel estetik ve kullanıcı deneyimini 
+                            mükemmel bir dengeye getirmeye odaklanıyorum.
+                        </p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">Yetenekler</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-600">UI Design</span>
+                                    <span class="text-gray-600">97%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 97%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-600">UX Research</span>
+                                    <span class="text-gray-600">93%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 93%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-600">Figma</span>
+                                    <span class="text-gray-600">98%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 98%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Neler Yaptık?</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                Birlikte yarattığımız en iyi işlerden bazıları. Her proje, becerilerimizin ve yaratıcı vizyonumuzun bir kombinasyonunu yansıtıyor.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="portfolio-card bg-white rounded-xl shadow-md p-6 flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                    <img src="assets/images/e-ticaret-mockup.png" alt="E-Ticaret Platformu" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">E-Ticaret Platformu</h3>
+                    <p class="text-gray-600 mb-4 text-center">Modern ve güvenli alışveriş deneyimi sunan, ölçeklenebilir e-ticaret platformu.</p>
+                    <a href="html/e-ticaret.html" class="btn-glow bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Detaylar
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                    <div class="mb-4 overflow-hidden rounded-lg w-full">
+                        <img src="https://source.unsplash.com/random/600x400/?website" alt="Kurumsal Web Sitesi" class="w-full h-48 object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Kurumsal Web Sitesi</h3>
+                    <p class="text-gray-600 mb-4 text-center">
+                        Modern ve mobil uyumlu bir kurumsal web sitesi. SEO dostu ve hızlı yüklenen sayfalar.
+                    </p>
+                    <a href="html/kurumsal-web.html" class="btn-glow bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Detaylar
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                    <div class="mb-4 overflow-hidden rounded-lg w-full">
+                        <img src="https://source.unsplash.com/random/600x400/?dashboard" alt="Yönetim Paneli" class="w-full h-48 object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Yönetim Paneli</h3>
+                    <p class="text-gray-600 mb-4 text-center">
+                        Kullanıcı dostu ve güvenli bir yönetim paneli. Gerçek zamanlı veri takibi ve analiz araçları.
+                    </p>
+                    <a href="html/yonetim-paneli.html" class="btn-glow bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Detaylar
+                    </a>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                    <div class="mb-4 overflow-hidden rounded-lg w-full">
+                        <img src="https://source.unsplash.com/random/600x400/?mobile-app" alt="Mobil Uygulama" class="w-full h-48 object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Mobil Uygulama</h3>
+                    <p class="text-gray-600 mb-4 text-center">
+                        Hem iOS hem Android için geliştirilmiş modern bir mobil uygulama. Yüksek performans ve kullanıcı dostu arayüz.
+                    </p>
+                    <a href="html/mobil-uygulama.html" class="btn-glow bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Detaylar
+                    </a>
+                </div>
+                <!-- Project 5 -->
+                <div class="portfolio-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                    <div class="mb-4 overflow-hidden rounded-lg w-full">
+                        <img src="https://source.unsplash.com/random/600x400/?branding" alt="Marka Tasarımı" class="w-full h-48 object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Marka Tasarımı</h3>
+                    <p class="text-gray-600 mb-4 text-center">
+                        Yeni kurulan bir girişim için logo, renk paleti ve marka kimliği tasarımı.
+                    </p>
+                    <a href="html/marka-tasarimi.html" class="btn-glow bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Detaylar
+                    </a>
+                </div>
+                <!-- Project 6 -->
+                <div class="portfolio-card bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                    <div class="mb-4 overflow-hidden rounded-lg w-full">
+                        <img src="https://source.unsplash.com/random/600x400/?seo" alt="SEO Optimizasyonu" class="w-full h-48 object-cover hover:scale-105 transition-transform">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">SEO Optimizasyonu</h3>
+                    <p class="text-gray-600 mb-4 text-center">
+                        Web siteleri için kapsamlı SEO çalışmaları ve Google sıralamalarında yükselme.
+                    </p>
+                    <a href="html/seo-optimizasyonu.html" class="btn-glow bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition-colors duration-300">
+                        Detaylar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section id="how-we-work" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Nasıl Çalışıyoruz?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
+                <div class="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center">
+                    <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-search"></i></div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Keşif & Planlama</h3>
+                    <p class="text-gray-600 text-sm">Proje hedeflerinizi ve gereksinimlerinizi dinliyoruz, yol haritası oluşturuyoruz.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center">
+                    <div class="text-4xl text-purple-600 mb-4"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Tasarım</h3>
+                    <p class="text-gray-600 text-sm">Kullanıcı odaklı, modern ve estetik arayüzler tasarlıyoruz.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center">
+                    <div class="text-4xl text-green-600 mb-4"><i class="fas fa-code"></i></div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Geliştirme</h3>
+                    <p class="text-gray-600 text-sm">Onaylanan tasarımları hızlı ve kaliteli şekilde kodluyoruz.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center">
+                    <div class="text-4xl text-yellow-600 mb-4"><i class="fas fa-vial"></i></div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Test</h3>
+                    <p class="text-gray-600 text-sm">Projenizi farklı senaryolarda test edip, hataları gideriyoruz.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow p-6 flex flex-col items-center">
+                    <div class="text-4xl text-pink-600 mb-4"><i class="fas fa-rocket"></i></div>
+                    <h3 class="text-lg font-semibold mb-2 text-gray-700">Yayın & Destek</h3>
+                    <p class="text-gray-600 text-sm">Projeyi yayına alıyor, destek ve bakım hizmeti sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">İletişim</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                Bizimle iletişime geçmek için aşağıdaki WhatsApp butonunu kullanabilirsiniz.
+            </p>
+            <a href="https://wa.me/905555555555" target="_blank"
+               class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg transition-colors duration-300">
+                <i class="fab fa-whatsapp fa-lg mr-3"></i> WhatsApp ile İletişime Geç
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 pt-0 pb-0 border-t border-gray-200">
+        <div class="text-center w-full pt-4 pb-4" style="margin-bottom:0;">
+            <p class="text-gray-600 text-sm">
+                &copy; 2023 TK Studio. Tüm hakları saklıdır.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cursor trail effect
+        const cursorTrail = document.getElementById('cursor-trail');
+        document.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            cursorTrail.style.transform = `translate3d(${clientX}px, ${clientY}px, 0)`;
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

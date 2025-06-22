@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret Platformu | TK Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-40">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="../assets/images/logo.png" alt="TK Studio Logo" class="h-10 w-10 object-contain">
+                <span class="text-2xl font-bold text-gray-800">TK <span class="text-blue-600">Studio</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html#person1" class="nav-link text-gray-700 hover:text-blue-600">Kadir</a>
+                <a href="../index.html#person2" class="nav-link text-gray-700 hover:text-blue-600">Talha</a>
+                <a href="../index.html#projects" class="nav-link text-gray-700 hover:text-blue-600">Neler Yaptık</a>
+                <a href="../index.html#how-we-work" class="nav-link text-gray-700 hover:text-blue-600">Nasıl Çalışıyoruz</a>
+                <a href="../index.html#contact" class="nav-link text-gray-700 hover:text-blue-600">İletişim</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-gray-700"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 px-6 pb-4">
+            <a href="../index.html#person1" class="block nav-link text-gray-700 hover:text-blue-600">Kadir</a>
+            <a href="../index.html#person2" class="block nav-link text-gray-700 hover:text-blue-600">Talha</a>
+            <a href="../index.html#projects" class="block nav-link text-gray-700 hover:text-blue-600">Neler Yaptık</a>
+            <a href="../index.html#how-we-work" class="block nav-link text-gray-700 hover:text-blue-600">Nasıl Çalışıyoruz</a>
+            <a href="../index.html#contact" class="block nav-link text-gray-700 hover:text-blue-600">İletişim</a>
+        </div>
+    </nav>
+
+    <!-- E-Ticaret Projesi Hero -->
+    <section class="hero-gradient text-white min-h-[400px] flex items-center justify-center relative overflow-hidden pt-32 pb-12">
+        <div class="container mx-auto px-6 z-10">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-center">
+                    <span class="typewriter block text-white">E-Ticaret Platformu</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 text-center max-w-2xl mx-auto">
+                    Modern, hızlı ve güvenli bir alışveriş deneyimi sunan, ölçeklenebilir e-ticaret platformu.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proje Detayları -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="../assets/images/e-ticaret-mockup.png" alt="E-Ticaret Platformu" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Proje Özellikleri</h2>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                        <li>Mobil uyumlu ve modern kullanıcı arayüzü</li>
+                        <li>Güvenli kullanıcı kayıt & giriş sistemi</li>
+                        <li>Ürün listeleme, filtreleme ve detay sayfaları</li>
+                        <li>Sepet ve ödeme entegrasyonu</li>
+                        <li>Yönetici paneli ile ürün ve sipariş yönetimi</li>
+                        <li>Hızlı arama ve kategori desteği</li>
+                        <li>SEO uyumlu altyapı</li>
+                    </ul>
+                    <div class="mt-6">
+                        <span class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold mr-2 mb-2">React</span>
+                        <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold mr-2 mb-2">Node.js</span>
+                        <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold mr-2 mb-2">MongoDB</span>
+                        <span class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold mr-2 mb-2">Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proje Galerisi -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Ekran Görüntüleri</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <img src="../assets/images/e-ticaret-1.png" alt="Ürün Listesi" class="rounded-lg shadow-md w-full">
+                <img src="../assets/images/e-ticaret-2.png" alt="Ürün Detay" class="rounded-lg shadow-md w-full">
+                <img src="../assets/images/e-ticaret-3.png" alt="Sepet" class="rounded-lg shadow-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Proje İletişim -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Bu projeye benzer bir e-ticaret sitesi ister misiniz?</h2>
+            <p class="text-gray-600 mb-8">Hemen iletişime geçin, sizin için de modern ve güçlü bir e-ticaret platformu geliştirelim.</p>
+            <a href="https://wa.me/905555555555" target="_blank" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium text-lg transition-colors shadow-lg">
+                <i class="fab fa-whatsapp fa-lg mr-3"></i> WhatsApp ile İletişime Geç
+            </a>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
